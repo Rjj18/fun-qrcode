@@ -282,8 +282,16 @@ export class I18n {
      */
     static init() {
         this.currentLanguage = this.detectLanguage();
-        this.applyTranslations();
-        this.updatePageMetadata();
+        // Wait for DOM to be ready before applying translations
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                this.applyTranslations();
+                this.updatePageMetadata();
+            });
+        } else {
+            this.applyTranslations();
+            this.updatePageMetadata();
+        }
     }
 
     /**
@@ -342,9 +350,7 @@ export class I18n {
             const translatedText = this.t(key);
             
             // For elements that should display the translation
-            if (translatedText !== key) {
-                element.textContent = translatedText;
-            }
+            element.textContent = translatedText;
         });
 
         // Update elements with data-i18n-placeholder attribute
@@ -353,16 +359,12 @@ export class I18n {
             const translatedText = this.t(key);
             
             // For placeholder attributes
-            if (translatedText !== key) {
-                element.placeholder = translatedText;
-            }
+            element.placeholder = translatedText;
         });
 
         // Update page title
         const titleTranslation = this.t('title');
-        if (titleTranslation !== 'title') {
-            document.title = titleTranslation + ' - Transform Links with Style';
-        }
+        document.title = titleTranslation + ' - Transform Links with Style';
     }
 
     /**

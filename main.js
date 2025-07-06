@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     new QRCodeGenerator();
 });
 
+// Also try immediate initialization if DOM is already ready
+if (document.readyState !== 'loading') {
+    new QRCodeGenerator();
+}
+
 // Service Worker registration for PWA capabilities (optional)
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
