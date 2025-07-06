@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun QRCode - Transform Links with Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🎨 Fun QRCode</h1>
+            <p class="subtitle">Transform your links into stylish QR codes</p>
+        </header>
+
+        <main class="main">
+            <form class="qr-form" id="qrForm">
+                <div class="input-group">
+                    <label for="urlInput" class="input-label">Enter your URL:</label>
+                    <input 
+                        type="url" 
+                        id="urlInput" 
+                        class="url-input" 
+                        placeholder="https://example.com"
+                        required
+                    >
+                </div>
+
+                <div class="theme-group">
+                    <label class="input-label">Choose a theme:</label>
+                    <div class="theme-selector">
+                        <button type="button" class="theme-btn active" data-theme="classic">
+                            🔲 Classic
+                        </button>
+                        <button type="button" class="theme-btn" data-theme="colorful">
+                            🌈 Colorful
+                        </button>
+                        <button type="button" class="theme-btn" data-theme="neon">
+                            ⚡ Neon
+                        </button>
+                        <button type="button" class="theme-btn" data-theme="nature">
+                            🌿 Nature
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="generate-btn">
+                    Generate QR Code ✨
+                </button>
+            </form>
+
+            <div class="result-section" id="resultSection">
+                <div class="qr-container" id="qrContainer">
+                    <!-- QR code will be generated here -->
+                </div>
+                <div class="action-buttons" id="actionButtons">
+                    <button class="download-btn" id="downloadBtn">
+                        📥 Download
+                    </button>
+                    <button class="share-btn" id="shareBtn">
+                        📤 Share
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Fun QRCode - Made with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
