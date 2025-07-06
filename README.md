@@ -1,6 +1,6 @@
 # Fun QRCode
 
-A fun and creative application that transforms links into QR codes using exciting and playful themes.
+A fun and creative application that 5. Your app will be available at `https://rjj18.github.io/fun-qrcode`ransforms links into QR codes using exciting and playful themes.
 
 ## Description
 
@@ -21,12 +21,12 @@ Fun QRCode takes any URL and generates a QR code with various fun themes, making
 ## Getting Started
 
 ### Live Demo
-Visit the live application: [Fun QRCode on GitHub Pages](https://yourusername.github.io/fun-qrcode)
+Visit the live application: [Fun QRCode on GitHub Pages](https://rjj18.github.io/fun-qrcode)
 
 ### Local Development
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/fun-qrcode.git
+   git clone https://github.com/Rjj18/fun-qrcode.git
    cd fun-qrcode
    ```
 
