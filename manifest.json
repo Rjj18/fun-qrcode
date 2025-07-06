@@ -1,0 +1,27 @@
+{
+  "name": "Fun QRCode - Transform Links with Style",
+  "short_name": "Fun QRCode",
+  "description": "Transform your links into stylish QR codes with fun themes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgcng9IjgiIGZpbGw9IndoaXRlIi8+CjxyZWN0IHg9IjQwIiB5PSI0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzYzNjZmMSIvPgo8cmVjdCB4PSI4OCIgeT0iNDAiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgcng9IjIiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iMTIwIiB5PSI0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzYzNjZmMSIvPgo8cmVjdCB4PSI0MCIgeT0iODgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgcng9IjIiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iNzIiIHk9Ijg4IiB3aWR0aD0iNDgiIiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzYzNjZmMSIvPgo8cmVjdCB4PSIxMzYiIHk9Ijg4IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHJ4PSIyIiBmaWxsPSIjNjM2NmYxIi8+CjxyZWN0IHg9IjQwIiB5PSIxMjAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjQiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iODgiIHk9IjEyMCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzYzNjZmMSIvPgo8cmVjdCB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzYzNjZmMSIvPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iNjQiIHk9IjY0IiB3aWR0aD0iMzg0IiBoZWlnaHQ9IjM4NCIgcng9IjIwIiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIxMDQiIHk9IjEwNCIgd2lkdGg9Ijg4IiBoZWlnaHQ9Ijg4IiByeD0iMTIiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iMjMyIiB5PSIxMDQiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgcng9IjYiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iMzIwIiB5PSIxMDQiIHdpZHRoPSI4OCIgaGVpZ2h0PSI4OCIgcng9IjEyIiBmaWxsPSIjNjM2NmYxIi8+CjxyZWN0IHg9IjEwNCIgeT0iMjMyIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI2IiBmaWxsPSIjNjM2NmYxIi8+CjxyZWN0IHg9IjE5MiIgeT0iMjMyIiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjQ4IiByeD0iNiIgZmlsbD0iIzYzNjZmMSIvPgo8cmVjdCB4PSIzNjAiIHk9IjIzMiIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iNiIgZmlsbD0iIzYzNjZmMSIvPgo8cmVjdCB4PSIxMDQiIHk9IjMyMCIgd2lkdGg9Ijg4IiBoZWlnaHQ9Ijg4IiByeD0iMTIiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iMjMyIiB5PSIzMjAiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgcng9IjYiIGZpbGw9IiM2MzY2ZjEiLz4KPHJlY3QgeD0iMzIwIiB5PSIzMjAiIHdpZHRoPSI4OCIgaGVpZ2h0PSI4OCIgcng9IjEyIiBmaWxsPSIjNjM2NmYxIi8+Cjwvc3ZnPgo=",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "tools"],
+  "lang": "en"
+}
