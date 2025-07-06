@@ -45,12 +45,20 @@ Visit the live application: [Fun QRCode on GitHub Pages](https://rjj18.github.io
 3. Navigate to `http://localhost:8000` in your browser
 
 ### Deployment to GitHub Pages
-1. Push your code to GitHub
-2. Go to your repository settings
-3. Navigate to "Pages" section
-4. Select "Deploy from a branch"
-5. Choose "main" branch and "/ (root)" folder
-6. Your app will be available at `https://yourusername.github.io/fun-qrcode`
+
+**🚀 Automatic Deployment:**
+This project includes a GitHub Actions workflow that automatically deploys to GitHub Pages on every push to the `main` branch.
+
+**Manual Setup (One-time):**
+1. Go to your repository settings: https://github.com/Rjj18/fun-qrcode/settings/pages
+2. Navigate to "Pages" section
+3. Under "Source", select **"GitHub Actions"**
+4. The workflow will automatically deploy your app
+
+**Result:**
+- Your app will be available at: https://rjj18.github.io/fun-qrcode
+- Updates deploy automatically when you push to `main`
+- Check deployment status in the "Actions" tab of your repository
 
 ### Browser Compatibility
 - Modern browsers with ES6 module support
