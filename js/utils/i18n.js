@@ -339,49 +339,65 @@ export class I18n {
         // Update elements with data-i18n attribute
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
-            element.textContent = this.t(key);
+            const translatedText = this.t(key);
+            
+            // For elements that should display the translation
+            if (translatedText !== key) {
+                element.textContent = translatedText;
+            }
         });
 
         // Update elements with data-i18n-placeholder attribute
         document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
             const key = element.getAttribute('data-i18n-placeholder');
-            element.placeholder = this.t(key);
+            const translatedText = this.t(key);
+            
+            // For placeholder attributes
+            if (translatedText !== key) {
+                element.placeholder = translatedText;
+            }
         });
 
         // Update page title
-        document.title = this.t('title') + ' - Transform Links with Style';
+        const titleTranslation = this.t('title');
+        if (titleTranslation !== 'title') {
+            document.title = titleTranslation + ' - Transform Links with Style';
+        }
     }
 
     /**
      * Update page metadata for SEO
      */
     static updatePageMetadata() {
+        const subtitleTranslation = this.t('subtitle');
+        const titleTranslation = this.t('title');
+        
         // Update meta description
         const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription) {
-            metaDescription.content = this.t('subtitle');
+        if (metaDescription && subtitleTranslation !== 'subtitle') {
+            metaDescription.content = subtitleTranslation;
         }
 
         // Update Open Graph tags
         const ogTitle = document.querySelector('meta[property="og:title"]');
-        if (ogTitle) {
-            ogTitle.content = this.t('title') + ' - Transform Links with Style';
+        if (ogTitle && titleTranslation !== 'title') {
+            ogTitle.content = titleTranslation + ' - Transform Links with Style';
         }
 
         const ogDescription = document.querySelector('meta[property="og:description"]');
-        if (ogDescription) {
-            ogDescription.content = this.t('subtitle');
+        if (ogDescription && subtitleTranslation !== 'subtitle') {
+            ogDescription.content = subtitleTranslation;
         }
 
         // Update Twitter Card tags
         const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-        if (twitterTitle) {
-            twitterTitle.content = this.t('title') + ' - Transform Links with Style';
+        if (twitterTitle && titleTranslation !== 'title') {
+            twitterTitle.content = titleTranslation + ' - Transform Links with Style';
         }
 
         const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-        if (twitterDescription) {
-            twitterDescription.content = this.t('subtitle');
+        if (twitterDescription && subtitleTranslation !== 'subtitle') {
+            twitterDescription.content = subtitleTranslation;
         }
     }
 

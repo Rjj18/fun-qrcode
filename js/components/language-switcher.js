@@ -135,6 +135,9 @@ export class LanguageSwitcher {
             }
         });
 
+        // Force retranslation of all elements
+        I18n.applyTranslations();
+
         // Show success toast
         const languageName = language ? language.name : langCode;
         this.showLanguageChangeToast(languageName);
