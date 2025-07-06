@@ -8,6 +8,7 @@ import { QRCodeAPI } from './services/qrcode-api.js';
 import { ThemeManager } from './theme/theme-manager.js';
 import { UIUtils } from './utils/ui-utils.js';
 import { ShareManager } from './features/share-manager.js';
+import { I18n } from './utils/i18n.js';
 
 export class QRCodeGenerator {
     constructor() {
@@ -21,6 +22,7 @@ export class QRCodeGenerator {
      * Initialize the QR code generator
      */
     init() {
+        I18n.init();
         UIUtils.initializeAnimations();
         this.bindEvents();
     }
@@ -97,7 +99,7 @@ export class QRCodeGenerator {
             this.showResult();
         } catch (error) {
             console.error('Error generating QR code:', error);
-            this.showError('Failed to generate QR code. Please try again.');
+            this.showError(I18n.t('error.generation'));
         }
     }
 

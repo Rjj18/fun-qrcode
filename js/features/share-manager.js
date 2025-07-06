@@ -4,6 +4,7 @@
 
 import { ThemeManager } from '../theme/theme-manager.js';
 import { UIUtils } from '../utils/ui-utils.js';
+import { I18n } from '../utils/i18n.js';
 
 export class ShareManager {
     /**
@@ -51,7 +52,7 @@ export class ShareManager {
 
         } catch (error) {
             console.error('Download failed:', error);
-            alert('Download failed. Please try right-clicking the QR code and selecting "Save image as..."');
+            alert(I18n.t('error.download'));
         }
     }
 
@@ -63,8 +64,8 @@ export class ShareManager {
         if (navigator.share) {
             try {
                 await navigator.share({
-                    title: 'Fun QRCode',
-                    text: `Check out this QR code for: ${url}`,
+                    title: I18n.t('share.title'),
+                    text: I18n.t('share.text', { url }),
                     url: window.location.href
                 });
             } catch (error) {
@@ -73,10 +74,11 @@ export class ShareManager {
         } else {
             // Fallback: copy to clipboard
             try {
-                await navigator.clipboard.writeText(`Check out this QR code: ${window.location.href}`);
-                UIUtils.showToast('Link copied to clipboard!');
+                const shareText = `${I18n.t('share.title')}: ${window.location.href}`;
+                await navigator.clipboard.writeText(shareText);
+                UIUtils.showToast(I18n.t('success.copied'));
             } catch (error) {
-                UIUtils.showToast('Sharing not supported on this device');
+                UIUtils.showToast(I18n.t('error.shareNotSupported'));
             }
         }
     }

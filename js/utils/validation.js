@@ -2,6 +2,8 @@
  * Utility functions for validation
  */
 
+import { I18n } from './i18n.js';
+
 export class ValidationUtils {
     /**
      * Check if a string is a valid URL
@@ -29,7 +31,7 @@ export class ValidationUtils {
             return {
                 isValid: false,
                 url: trimmedUrl,
-                error: 'Please enter a valid URL'
+                error: I18n.t('error.emptyUrl')
             };
         }
 
@@ -37,7 +39,7 @@ export class ValidationUtils {
             return {
                 isValid: false,
                 url: trimmedUrl,
-                error: 'Please enter a valid URL (include http:// or https://)'
+                error: I18n.t('error.invalidUrl')
             };
         }
 

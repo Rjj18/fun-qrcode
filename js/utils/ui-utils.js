@@ -2,13 +2,15 @@
  * UI utilities for user interface interactions
  */
 
+import { I18n } from './i18n.js';
+
 export class UIUtils {
     /**
      * Show loading state in a container
      * @param {HTMLElement} container - The container element
      */
     static showLoading(container) {
-        container.innerHTML = '<div class="loading">🔄 Generating QR Code...</div>';
+        container.innerHTML = `<div class="loading">${I18n.t('loading')}</div>`;
         
         // Add loading styles
         const loadingDiv = container.querySelector('.loading');

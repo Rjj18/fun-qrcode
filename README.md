@@ -9,9 +9,14 @@ Fun QRCode takes any URL and generates a QR code with various fun themes, making
 ## Features
 
 - Convert any link into a QR code
-- Multiple fun themes to choose from
+- Multiple fun themes to choose from (Classic, Colorful, Neon, Nature)
 - Easy-to-use interface
 - High-quality QR code generation
+- 🌍 **Multilingual support** - Automatic language detection
+- 📱 Mobile-friendly and responsive design
+- 💾 Download QR codes with themed backgrounds
+- 📤 Share functionality with native Web Share API
+- 🔄 Offline capability with service worker
 
 ## Getting Started
 
@@ -50,6 +55,15 @@ Visit the live application: [Fun QRCode on GitHub Pages](https://yourusername.gi
 ### Browser Compatibility
 - Modern browsers with ES6 module support
 - Chrome 61+, Firefox 60+, Safari 10.1+, Edge 16+
+
+### Supported Languages
+- 🇺🇸 English (en)
+- 🇪🇸 Spanish (es) 
+- 🇧🇷 Portuguese (pt)
+- 🇫🇷 French (fr)
+- 🇩🇪 German (de)
+
+The app automatically detects your browser language and displays the interface accordingly. You can also manually set the language by adding `?lang=es` (for Spanish, for example) to the URL.
 
 ## Contributing
 

@@ -1,7 +1,7 @@
 // Fun QRCode Service Worker
 // Simple service worker for basic caching
 
-const CACHE_NAME = 'fun-qrcode-v1';
+const CACHE_NAME = 'fun-qrcode-v2';
 const urlsToCache = [
     './',
     './index.html',
@@ -10,6 +10,7 @@ const urlsToCache = [
     './js/qrcode-generator.js',
     './js/utils/validation.js',
     './js/utils/ui-utils.js',
+    './js/utils/i18n.js',
     './js/services/qrcode-api.js',
     './js/theme/theme-manager.js',
     './js/features/share-manager.js'
