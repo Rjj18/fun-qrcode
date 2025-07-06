@@ -5,7 +5,7 @@
 
 export class I18n {
     static DEFAULT_LANGUAGE = 'en';
-    static SUPPORTED_LANGUAGES = ['en', 'es', 'pt', 'fr', 'de', 'it', 'ja', 'zh'];
+    static SUPPORTED_LANGUAGES = ['en', 'es', 'pt', 'fr', 'de', 'it', 'ja'];
 
     static translations = {
         en: {
@@ -196,6 +196,82 @@ export class I18n {
             
             // Footer
             footer: '© 2025 Spaß QR-Code - Mit ❤️ gemacht'
+        },
+
+        it: {
+            // Header
+            title: '🎨 QR Divertente',
+            subtitle: 'Trasforma i tuoi link in codici QR stilosi',
+            
+            // Form
+            urlLabel: 'Inserisci la tua URL:',
+            urlPlaceholder: 'https://esempio.com',
+            themeLabel: 'Scegli un tema:',
+            generateBtn: 'Genera Codice QR ✨',
+            
+            // Themes
+            'theme.classic': '🔲 Classico',
+            'theme.colorful': '🌈 Colorato',
+            'theme.neon': '⚡ Neon',
+            'theme.nature': '🌿 Natura',
+            
+            // Actions
+            downloadBtn: '📥 Scarica',
+            shareBtn: '📤 Condividi',
+            
+            // Messages
+            loading: '🔄 Generazione Codice QR...',
+            'error.emptyUrl': 'Per favore inserisci una URL valida',
+            'error.invalidUrl': 'Per favore inserisci una URL valida (includi http:// o https://)',
+            'error.generation': 'Generazione del codice QR fallita. Riprova.',
+            'error.download': 'Download fallito. Clicca con il tasto destro sul codice QR e seleziona "Salva immagine con nome..."',
+            'success.copied': 'Link copiato negli appunti!',
+            'error.shareNotSupported': 'Condivisione non supportata su questo dispositivo',
+            
+            // Share
+            'share.title': 'QR Divertente',
+            'share.text': 'Guarda questo codice QR per: {url}',
+            
+            // Footer
+            footer: '© 2025 QR Divertente - Fatto con ❤️'
+        },
+
+        ja: {
+            // Header
+            title: '🎨 楽しいQRコード',
+            subtitle: 'リンクをスタイリッシュなQRコードに変換',
+            
+            // Form
+            urlLabel: 'URLを入力してください：',
+            urlPlaceholder: 'https://example.com',
+            themeLabel: 'テーマを選択：',
+            generateBtn: 'QRコードを生成 ✨',
+            
+            // Themes
+            'theme.classic': '🔲 クラシック',
+            'theme.colorful': '🌈 カラフル',
+            'theme.neon': '⚡ ネオン',
+            'theme.nature': '🌿 ナチュラル',
+            
+            // Actions
+            downloadBtn: '📥 ダウンロード',
+            shareBtn: '📤 シェア',
+            
+            // Messages
+            loading: '🔄 QRコードを生成中...',
+            'error.emptyUrl': '有効なURLを入力してください',
+            'error.invalidUrl': '有効なURLを入力してください（http://またはhttps://を含めてください）',
+            'error.generation': 'QRコードの生成に失敗しました。もう一度お試しください。',
+            'error.download': 'ダウンロードに失敗しました。QRコードを右クリックして「画像を保存」を選択してください。',
+            'success.copied': 'リンクがクリップボードにコピーされました！',
+            'error.shareNotSupported': 'このデバイスではシェア機能がサポートされていません',
+            
+            // Share
+            'share.title': '楽しいQRコード',
+            'share.text': 'このQRコードをチェック: {url}',
+            
+            // Footer
+            footer: '© 2025 楽しいQRコード - ❤️で作成'
         }
     };
 

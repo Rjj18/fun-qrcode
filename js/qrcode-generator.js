@@ -9,6 +9,7 @@ import { ThemeManager } from './theme/theme-manager.js';
 import { UIUtils } from './utils/ui-utils.js';
 import { ShareManager } from './features/share-manager.js';
 import { I18n } from './utils/i18n.js';
+import { LanguageSwitcher } from './components/language-switcher.js';
 
 export class QRCodeGenerator {
     constructor() {
@@ -23,6 +24,7 @@ export class QRCodeGenerator {
      */
     init() {
         I18n.init();
+        LanguageSwitcher.init();
         UIUtils.initializeAnimations();
         this.bindEvents();
     }

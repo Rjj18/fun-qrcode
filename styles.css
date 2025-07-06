@@ -82,6 +82,7 @@ body {
     color: white;
     padding: var(--spacing-xl);
     text-align: center;
+    position: relative;
 }
 
 .title {

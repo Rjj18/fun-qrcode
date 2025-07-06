@@ -62,8 +62,10 @@ Visit the live application: [Fun QRCode on GitHub Pages](https://yourusername.gi
 - 🇧🇷 Portuguese (pt)
 - 🇫🇷 French (fr)
 - 🇩🇪 German (de)
+- 🇮🇹 Italian (it)
+- 🇯🇵 Japanese (ja)
 
-The app automatically detects your browser language and displays the interface accordingly. You can also manually set the language by adding `?lang=es` (for Spanish, for example) to the URL.
+The app automatically detects your browser language and displays the interface accordingly. You can also manually change the language using the language switcher button in the top-right corner, or by adding `?lang=es` (for Spanish, for example) to the URL.
 
 ## Contributing
 
