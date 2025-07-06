@@ -15,7 +15,41 @@ Fun QRCode takes any URL and generates a QR code with various fun themes, making
 
 ## Getting Started
 
-*Instructions for installation and usage will be added as the project develops.*
+### Live Demo
+Visit the live application: [Fun QRCode on GitHub Pages](https://yourusername.github.io/fun-qrcode)
+
+### Local Development
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/fun-qrcode.git
+   cd fun-qrcode
+   ```
+
+2. Open `index.html` in your browser or serve with a local server:
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   
+   # Using Node.js
+   npx serve .
+   
+   # Using PHP
+   php -S localhost:8000
+   ```
+
+3. Navigate to `http://localhost:8000` in your browser
+
+### Deployment to GitHub Pages
+1. Push your code to GitHub
+2. Go to your repository settings
+3. Navigate to "Pages" section
+4. Select "Deploy from a branch"
+5. Choose "main" branch and "/ (root)" folder
+6. Your app will be available at `https://yourusername.github.io/fun-qrcode`
+
+### Browser Compatibility
+- Modern browsers with ES6 module support
+- Chrome 61+, Firefox 60+, Safari 10.1+, Edge 16+
 
 ## Contributing
 

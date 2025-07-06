@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Service Worker registration for PWA capabilities (optional)
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+        // Use relative path for GitHub Pages compatibility
+        const swPath = './sw.js';
+        navigator.serviceWorker.register(swPath)
             .then((registration) => {
                 console.log('SW registered: ', registration);
             })
